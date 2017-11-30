@@ -97,4 +97,10 @@ class Employer {
       return customer.employerId == this.id;
     });
   }
+
+  deliveries() {
+    return this.employees().map((delivery)=> {
+      return customer.meals()
+    });
+  }
 }
