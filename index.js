@@ -99,10 +99,10 @@ class Employer {
   }
 
   deliveries() {
-    let allDeliveries = this.employees().map(employee => {
-      return employee.deliveries();
-    });
-    let merged = [].concat.apply([]. allDeliveries);
-    return merged;
-  }
+   let allDeliveries = this.employees().map(employee => {
+     return employee.deliveries();
+   });
+   let merged = [].concat.apply([], allDeliveries);
+   return merged;
+ }
 }
