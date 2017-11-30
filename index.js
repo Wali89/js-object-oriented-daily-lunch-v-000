@@ -100,7 +100,7 @@ class Employer {
 
   deliveries() {
     return this.employees().map((delivery)=> {
-      return delivery.customerId()
+      return deliveryId.customer()
     });
   }
 }
