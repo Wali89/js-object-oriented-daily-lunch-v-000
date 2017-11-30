@@ -103,5 +103,6 @@ class Employer {
       return employee.deliveries();
     });
     let merged = [].concat.apply([]. allDeliveries);
+    return merged;
   }
 }
