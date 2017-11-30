@@ -99,8 +99,8 @@ class Employer {
   }
 
   deliveries() {
-    return this.employees().map((delivery)=> {
-      return deliveryId.customer()
+    let allDeliveries = this.employees().map(employee => {
+      return employee.deliveries();
     });
   }
 }
