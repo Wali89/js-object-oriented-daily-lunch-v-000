@@ -41,7 +41,7 @@ class Meal {
       return delivery.mealId === this.id;
     });
   }
-  customer(){
+  customers(){
     return this.deliveries().map((delivery) => {
       return delivery.customer()
     });
