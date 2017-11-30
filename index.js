@@ -65,7 +65,7 @@ class Delivery {
     store.deliveries.push(this);
   }
 
-  customers(){
+  customer(){
     return store.customers.find((customer) => {
       return customer.id === this.customerId
     })
