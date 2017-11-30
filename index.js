@@ -9,7 +9,7 @@ let customerId = 0
 class Customer {
   constructor (name, employer) {
     this.name = name;
-    this.employerId = employerId;
+    this.employerId = employer;
     this.mealId = mealId;
     this.deliveryId = deliveryId;
     this.id = ++customerId;
