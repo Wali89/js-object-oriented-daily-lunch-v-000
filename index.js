@@ -42,8 +42,8 @@ class Meal {
     });
   }
   customers(){
-    return this.deliveries().map((customer) => {
-      return
+    return this.deliveries().map((delivery) => {
+      return delivery.meal()
     });
   }
   static byPrice(price) {
