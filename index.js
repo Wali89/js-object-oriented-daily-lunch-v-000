@@ -42,7 +42,7 @@ class Meal {
     this.deliveryId = deliveryId;
     store.meals.push(this);
   }
-  deliveries(){
+  deliveries() {
     return store.deliveries.filter((delivery) => {
       return delivery.mealId === this.id;
     });
@@ -71,13 +71,13 @@ class Delivery {
     store.deliveries.push(this);
   }
 
-  customer(){
+  customer() {
     return store.customers.find((customer) => {
       return customer.id === this.customerId
     })
   }
 
-  meal(){
+  meal() {
     return store.meals.find((meal) => {
       return meal.id === this.mealId
     })
@@ -94,7 +94,7 @@ class Employer {
     store.employers.push(this);
   }
 
-  employees(){
+  employees() {
     return store.customers.filter((customer)=> {
       return customer.employerId == this.id;
     })
