@@ -2,7 +2,8 @@
 //
 
 
-let store = {customers: [], deliveries: [], employers: [], meals:[]};
+let store = { deliveries: [], employers: [], customers: [], meals: [] };
+
 //CUSTOMER
 let customerId = 0
 
