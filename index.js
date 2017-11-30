@@ -95,8 +95,8 @@ class Employer {
   }
 
   employees(){
-    return store.employees.filter((employee)=> {
-      return employee.employerId == this.id;
+    return store.customers.filter((customer)=> {
+      return customer.employerId == this.id;
     })
   }
 }
