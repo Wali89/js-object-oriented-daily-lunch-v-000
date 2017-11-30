@@ -16,8 +16,14 @@ class Customer {
     store.customers.push(this);
   }
 
+  deliveries(){
+    return store.deliveries.filter((delivery)=>{
+      return delivery.customerId == this.id;
+    })
+  }
+
   meals(){
-    return store.meals.filter((meal) => {
+    return this((meal) => {
       return meal.customerId == this.id
     })
   }
