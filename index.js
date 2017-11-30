@@ -107,7 +107,7 @@ class Employer {
   }
 
   meals() {
-    let allMeals = this.deliveries().map(delivery =>{
+    let allMeals = this.deliveries().map(delivery => {
       return delivery.meal();
     });
     let uniqueMeals = [...new Set(allmeals)];
