@@ -43,7 +43,7 @@ class Meal {
   }
   customer(){
     return this.deliveries().map((delivery) => {
-      return delivery.meal()
+      return delivery.customer()
     });
   }
   static byPrice(price) {
