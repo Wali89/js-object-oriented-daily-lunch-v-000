@@ -94,4 +94,9 @@ class Employer {
     store.employers.push(this);
   }
 
+  employees(){
+    return store.employees.filter((employee)=> {
+      return employee.employerId == this.id;
+    })
+  }
 }
