@@ -105,4 +105,11 @@ class Employer {
     let merged = [].concat.apply([], allDeliveries);
     return merged;
   }
+
+  meals() {
+    let allMeals = this.deliveries().map(delivery =>{
+      return delivery.meal();
+    });
+  }
 }
+
